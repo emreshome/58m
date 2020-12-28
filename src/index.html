@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content=" initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/networkgraph.esm.js"></script>
+  <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="/assets/links1.js"></script>
+  <script type="text/javascript" src="/assets/nodes1.js"></script>
+  <script type="text/javascript" src="/assets/links2.js"></script>
+  <script type="text/javascript" src="/assets/nodes2.js"></script>
+  <script type="text/javascript" src="/assets/links3.js"></script>
+  <script type="text/javascript" src="/assets/nodes3.js"></script>
+  <script type="text/javascript" src="/assets/links4.js"></script>
+  <script type="text/javascript" src="/assets/nodes4.js"></script>
+  <script type="text/javascript" src="/assets/links_svg.js"></script>
+  <script type="text/javascript" src="/assets/nodes_svg.js"></script>
+  <script nomodule src="/build/networkgraph.js"></script>
+
+</head>
+<body>
+
+  <div style="display:block; width: 100%; height:100%;  margin-right: 12px;">
+    <h1 style="margin-bottom: 0px;">Interactive Citation Graph on Canvas</h1>
+    <network-graph></network-graph>
+    
+  </div>
+
+  </div>
+  
+  <script>
+    networkGraphCanvas = document.getElementsByTagName("network-graph")[0];
+    networkGraphCanvas.links = links2;
+    networkGraphCanvas.nodes = nodes2;
+   
+  </script>
+</body>
+</html>
